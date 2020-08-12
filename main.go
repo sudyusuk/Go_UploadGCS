@@ -30,7 +30,7 @@ func main() {
 
 	// オブジェクトのReaderを作成
 	bucketName := "sample-go"
-	objectPath := "icon2"
+	objectPath := "icon"
 
 	w := client.Bucket(bucketName).Object(objectPath).NewWriter(ctx)
 	defer w.Close()
